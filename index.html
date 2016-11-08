@@ -1,0 +1,121 @@
+<!--
+Formulario PHP - Desarrollo Web 2016 - Experiencia 2
+===================================================================
+Creado por Rodrigo Catalan
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Experiencia 2">
+  <meta name="keywords" content="html, bootstrap, php, formulario, desarrollo, web">
+  <meta name="author" content="Rodrigo Catalan">
+  <title>Experiencia 2</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+  <h1>Experiencia Número 2</h1>
+  <!-- Formulario -->
+  <form enctype="multipart/form-data" method="post" action="enviar.php" accept-charset="UTF-8">
+    <!-- Hidden -->
+    <input type="hidden" name="enviado" value="1">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Mi Perfil</h3>
+      </div>
+      <div class="panel-body">
+        <!-- Texto -->
+        <div class="form-group">
+          <b>Nombre</b>
+          <input type="text" class="form-control" name="nombre" placeholder="Ingrese su nombre" required>
+        </div>
+        <div class="form-group">
+          <b>Apellido</b>
+          <input type="text" class="form-control" name="apellido" placeholder="Ingrese su apellido" required>
+        </div>
+        <!-- Fecha -->
+        <div class="form-group">
+          <b>Fecha Nacimiento</b>
+          <input type="date" class="form-control" name="fecha">
+        </div>
+        <!-- Sexo(Radio) -->
+        <div class="form-group">
+          <b>Sexo</b><br />
+          <input type="radio" name="sexo" value="m"> Masculino<br />
+          <input type="radio" name="sexo" value="f"> Femenino<br />
+        </div>
+        <!-- Seleccionar Region-->   
+          <div class="form-group">
+            <b>Región</b><br />
+            <select name="region" class="form-control">
+              <option value="">Seleccionar una región</option>
+              <option value="Región Metropolitana">Región Metropolitana</option>
+              <option value="Arica y Parinacota">XV Arica y Parinacota.</option>
+              <option value="Tarapacá">I Tarapacá</option>
+              <option value="Antofagasta">II Antofagasta</option>
+              <option value="Atacama">III Atacama</option>
+              <option value="Coquimbo">IV Coquimbo</option>
+              <option value="Valparaíso">V Valparaíso</option>
+              <option value="O'Higgins">VI O'Higgins</option>
+              <option value="Maule">VII Maule</option>
+              <option value="Biobío">VIII Biobío</option>
+              <option value="La Araucanía">IX La Araucanía</option>
+              <option value="Los Ríos">XIV Los Ríos</option>
+              <option value="Los Lagos">X Los Lagos</option>
+              <option value="Aysén">XI Aysén</option>
+              <option value="Magallanes y Antártica">XII Magallanes y Antártica</option>
+            </select>
+        </div>
+         <!-- Seleccionar Area de interes --> 
+        <div class="form-group">
+          <b>Áreas de interés</b><br />
+            <input type="checkbox" name="Ciencia" value="1">Ciencia <br>
+            <input type="checkbox" name="Deportes" value="1">Deportes <br>
+            <input type="checkbox" name="Pintura rupestre" value="1">Pintura rupestre <br>
+            <input type="checkbox" name="Videos de gato" value="1">Videos de gato <br>
+        </div>
+        <!-- Pagina -->
+        <div class="form-group">
+          <b>Página Personal</b><br />
+          <input type="url" name="direccionweb" required />
+        </div>
+        <!-- Correo -->
+        <div class="form-group">
+          <b>Correo electrónico</b><br />
+          <input type="email" name="email_control" required />
+        </div>
+        <!-- Color(Panel) -->
+        <div class="form-group">
+          <b>Seleccionar su Color favorito</b><br />
+          <input type="color" name="color_control" />
+        </div>
+      </div>
+      <div class="panel-footer">
+        <div class="text-right">< 
+          <a href="./" class="btn btn-primary">
+            <i class="glyphicon glyphicon-repeat"></i>
+            Reiniciar
+          </a>
+          <!-- Button submit -->
+          <button type="submit" class="btn btn-success">
+            Enviar
+            <i class="glyphicon glyphicon-menu-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!-- Pie de página -->
+  <footer>
+    <div class="text-center">
+      <i class="glyphicon glyphicon-leaf"></i>
+      Desarrollado por <a href="https://github.com/ShlCatalan" target="_blank">Rodrigo Catalan Lopez</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
